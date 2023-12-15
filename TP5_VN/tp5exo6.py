@@ -35,24 +35,19 @@ def nombre_occurrences(chaine, sous_chaine):
 
     return occurrences
 
-# Exemple d'utilisation
 chaine_utilisateur = input("Entrez la chaîne de caractères : ")
 
-# 1. Taille de la chaîne
 taille = taille_chaine(chaine_utilisateur)
 print(f"1. Taille de la chaîne : {taille} caractères")
 
-# 2. Pourcentage de voyelles
 pourcentage_voy = pourcentage_voyelles(chaine_utilisateur)
 print(f"2. Pourcentage de voyelles : {pourcentage_voy:.2f}%")
 
-# 3. Recherche de la sous-chaîne 'wagon'
 debut_occurrence = recherche_sous_chaine(chaine_utilisateur, 'wagon')
 if debut_occurrence != -1:
     print(f"3. 'wagon' est une sous-chaîne, début de la première occurrence : {debut_occurrence}")
 else:
     print("3. 'wagon' n'est pas une sous-chaîne dans la chaîne donnée.")
 
-# 4. Nombre d'occurrences de la sous-chaîne 'wagon'
 occurrences_wagon = nombre_occurrences(chaine_utilisateur, 'wagon')
 print(f"4. Nombre d'occurrences de 'wagon' dans la chaîne : {occurrences_wagon}")
