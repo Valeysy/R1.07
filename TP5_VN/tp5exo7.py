@@ -13,10 +13,8 @@ def verifier_fichier(nom_fichier):
     else:
         print(f"Le fichier {nom_fichier} n'existe pas.")
 
-# Entrée des noms de fichiers
 fichier1 = input("Entrez le nom du premier fichier : ")
 fichier2 = input("Entrez le nom du deuxième fichier : ")
 
-# Vérification des fichiers
 verifier_fichier(fichier1)
 verifier_fichier(fichier2)
