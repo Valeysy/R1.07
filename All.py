@@ -721,3 +721,29 @@ fichier2 = input("Entrez le nom du deuxième fichier : ")
 
 verifier_fichier(fichier1)
 verifier_fichier(fichier2)
+
+
+# jeu du juste prix 
+
+import random
+
+def jeu_juste_prix():
+    print("Bienvenue dans le jeu du Juste Prix!")
+    nombre_a_deviner = random.randint(1, 100)
+    essais = 0
+
+    while True:
+        essai_joueur = int(input("Devinez le nombre (entre 1 et 100) : "))
+        essais += 1
+
+        if essai_joueur < nombre_a_deviner:
+            print("Trop petit! Essayez encore.")
+        elif essai_joueur > nombre_a_deviner:
+            print("Trop grand! Essayez encore.")
+        else:
+            print(f"Bravo! Vous avez deviné le juste prix en {essais} essais.")
+            break
+
+if __name__ == "__main__":
+    jeu_juste_prix()
+
